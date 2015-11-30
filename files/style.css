@@ -1,0 +1,64 @@
+body {
+    background-color: rgba(0, 50, 100, .1);
+}
+
+#navbar_menu > li > a, #navbar_menu > li > a:visited {
+    color: rgba(255, 255, 255, .75);
+}
+
+#navbar_menu > li > a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-inverse {
+    background-color: rgba(50, 65, 85, .95);
+    border-color: rgba(45, 55, 75, .15);
+    border-bottom-width: 2px;
+}
+.bg-1 {
+    background-image: url(brain.png);
+    background-position: center;
+}
+.bg-1, .bg-3 {
+    background-color: white;
+}
+
+a, a:visited {
+    color: rgba(0, 80, 120, .85);
+}
+
+a:hover {
+    color: rgba(0, 80, 120, .85);
+}
+
+b {
+    color: rgba(150, 30, 65, .9);
+}
+
+img {
+    width: 100%;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.logo {
+    width: auto;
+}
+
+.video {
+    min-height: auto;
+}
+
+#main_title {
+    font-size: 40px;
+    color: rgba(255, 255, 255, .85);
+}
+
+#sub {
+    font-size: 18px;
+    line-height: 140%;
+    display: block;
+    color: rgba(255, 255, 255, .6);
+    position: relative;
+}

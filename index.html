@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Watch &amp; Learn</title>
+    <link data-turbolinks-track="true" href="files/custom.css" media="all" rel="stylesheet">
+    <link data-turbolinks-track="true" href="files/style.css" media="all" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner" data-no-turbolink="">
+            <div class="container">
+
+                <!-- For mobile -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header_menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" id="logo">
+                        Watch &amp; Learn
+                    </a>
+                </div>
+
+                <!-- Expanded -->
+                <div class="collapse navbar-collapse" id="header_menu">
+                    <nav>
+                        <ul id="navbar_menu" class="nav navbar-nav pull-right">
+                            <li><a href="#sec1">About</a></li>
+                            <li><a href="#sec2">Video</a></li>
+                            <li><a href="#sec3">Docs</a></li>
+                            <li><a href="#sec4">Team</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sec0" class="main-sec bg-1">
+        <div class="container-fluid" style="max-width: 1140px;" data-no-turbolink="">
+            <h1 id="main_title">
+            <!-- <img class="logo" src="files/wl_logo_small.png"> -->
+            <!-- <br>
+            Watch &amp; Learn
+            <br>
+            <i id="sub">-->
+            Unsupervised Semantic Parsing of Video Collections
+            <!--</i>-->
+            </h1>
+        </div>
+    </section>
+    <section id="sec1" class="main-sec bg-3">
+        <div class="container-fluid" style="max-width: 1140px;" data-no-turbolink="">
+            <h3 class="section_titles"><b>About</b></h3>
+            <p>
+            User generated videos have an underlying structure as a starting point, ending, and certain objective steps between these two. In this project, we are aiming to <b>discover</b> this underlying structure with <b>no labelling or supervision</b> by only watching a large-set of video collections. We accomplish this using both visual (video) and language (speech) information in a <b>joint unsupervised model</b>.
+          </p>
+            <br><br>
+            <center><img src="files/figure_8b_flattened.png" alt=""></center>
+            <br>
+            <p>
+            In a nutshell, our algorithm starts with a single query over Youtube such as “How to make an omelette?”, and downloads a large number of videos. Then, it discovers activities and parses each video in terms of these activities. We call the resulting joint parse as a storyline. For 5 videos, it looks like the above figure. For another query of “How to make a milkshake?”, the resulting story line is below. We visualize the storylines as temporal segmentation of the videos and ground truth segmentation. We also color code the activity steps we discovered and
+visualize their key-frames and the automatically generated captions.
+            <br><br>
+            </p>
+            <center><img src="files/figure_8a_flattened.png" alt=""></center>
+
+        </div>
+    </section>
+
+    <section id="sec2" class="main-sec">
+      <div class="container-fluid" style="max-width: 1140px;" data-no-turbolink="">
+        <h3 class="section_titles"><b>How Does It Work?</b></h3>
+        <!-- <div class="row"> -->
+        <p>In this video, we show a collection of discovered activities and their descriptions. Our algorithm generates these activities and their descriptions in a <b>fully unsupervised</b> way from large collection of YouTube videos. </p>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <center>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-yioRbst9X8?rel=0"></iframe>
+                </center>
+            </div>
+        <!-- </div> -->
+      </div>
+
+    </section>
+
+    <section id="sec3" class="main-sec bg-3">
+        <div class="container-fluid" style="max-width: 1140px;" data-no-turbolink="">
+            <h3 class="section_titles"><b>Paper, Code and Data</b></h3><br>
+            <div class="row">
+                <div class="col-sm-3 vcenter">
+                    <center><img id="pr2_dl" src="files/thumbnail2.png" alt=""></center>
+                </div><!--
+                --><div class="col-sm-9 vcenter">
+                    <b>Unsupervised Semantic Parsing of Video Collections</b><br>
+                    Ozan Sener, Amir Zamir, Silvio Savarese, Ashutosh Saxena<br>
+                    In <i>International Conference on Computer Vision (ICCV)</i>, 2015
+                    <br>
+                    <a href="http://ozansener.net/papers/sener_iccv15.pdf" target="_blank">[PDF]</a>
+                    <a href="http://ozansener.net/data/youtube.tgz">[Dataset]</a>
+                    <a href="https://github.com/ozansener/RecipeWatch">[GitHub]</a>
+                </div>
+            </div>
+<br>
+<p><b>Related papers:</b> <a href="http://robobrain.me" target="_blank">RoboBrain@ISRR 2015</a> and <a href="http://ozansener.net/papers/sener_rCRF.pdf">rCRF@RSS 2015</a>. </p>
+
+        </div>
+    </section>
+
+
+    <section id="sec4" class="main-sec">
+        <div class="container-fluid" style="max-width: 1140px;" data-no-turbolink="">
+            <br>
+            <h3 class="section_titles"><b>Contributors</b></h3>
+            <br><br>
+            <div class="row">
+              <div class="col-sm-3 contributor">
+                  <a href="http://ozansener.net" target="_blank">
+                      <center><img src="files/ozan.png" alt=""></center>
+                      <p>Ozan Sener</p>
+                  </a>
+              </div>
+              <div class="col-sm-3 contributor">
+                  <a href="http://www.cs.stanford.edu/~amirz/" target="_blank">
+                      <center><img src="files/amir.jpg" alt=""></center>
+                      <p>Amir Roshan Zamir</p>
+                  </a>
+              </div>
+                <div class="col-sm-3 contributor">
+                    <a href="http://cvgl.stanford.edu/silvio/" target="_blank">
+                        <center><img src="files/silvio.jpg" alt=""></center>
+                        <p>Silvio Savarese</p>
+                    </a>
+                </div>
+                <div class="col-sm-3 contributor">
+                    <a href="http://www.cs.cornell.edu/~asaxena" target="_blank">
+                        <center><img src="files/ashu.jpg" alt=""></center>
+                        <p>Ashutosh Saxena</p>
+                    </a>
+                </div>
+            </div>
+            <br><br>
+            <p>We also thank <a href="https://github.com/jayhack" target="_blank">Jay Hack</a> for building the <a href="https://github.com/jayhack/ModalDB" target="_blank">ModalDB</a>.</p>
+<b>Technical Queries:</b> Ozan Sener and Ashutosh Saxena
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <br>
+            <p class="text-muted pull-right"> © Cornell University, 2015</p>
+        </div>
+    </div>
+</body>
+</html>
