@@ -36,6 +36,12 @@ b {
 }
 
 img {
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+img.sm {
     width: 100%;
     border-radius: 0px !important;
     box-shadow: none !important;
